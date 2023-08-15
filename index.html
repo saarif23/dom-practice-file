@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of Dom</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            color: rgb(8, 0, 255);
+        }
+
+        #fruits-title {
+            color: black;
+        }
+
+
+        .visit-places {
+
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Welcome to my DOM</h1>
+    </header>
+    <main id="main-container">
+        <section>
+            <h1>My awasome dom de re BABA</h1>
+            <ul>
+                <li>Jalali set</li>
+                <li>Shafayet</li>
+                <li>bonobash</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul class="fruits-items">
+                <li>apple</li>
+                <li>banana</li>
+                <li>carrot</li>
+                <li>jackfruit</li>
+                <li>guava</li>
+                <li>papaya</li>
+                <li>grapes</li>
+                <li>pineapple</li>
+                <li>coconut</li>
+            </ul>
+        </section>
+        <section id="placesContainer">
+            <h1 id="placesTitle">Places I like to visits</h1>
+            <ul id="places-list">
+                <li class="visit-places">sondarban</li>
+                <li class="visit-places">bandorban</li>
+                <li class="visit-places">kataban</li>
+                <li class="visit-places">shallban</li>
+            </ul>
+        </section>
+
+    </main>
+    <script src="dom.js"></script>
+    <script src="append.js"></script>
+    <script src="styleInJs.js"></script>
+    <script>
+        
+        const Allheadding = document.getElementsByTagName('h1')
+        for (let h1 of Allheadding) {
+            // console.log(h1.innerText)
+        }
+
+        const places = document.getElementsByClassName('visit-places');
+        for (const place of places) {
+            // console.log(place.innerText)
+        }
+
+        const someLi = document.querySelector('.fruits-container li');
+        // for(let li of someLi){
+        //     console.log(li)
+        // }
+
+        // console.log(li.innerText);
+
+        // const oneLi = document.querySelector('.fruits-container  li');
+        // for (const li of oneLi){
+        //     console.log(li)
+        // }
+
+              
+
+
+
+    </script>
+
+</body>
+
+</html>
